@@ -1,4 +1,5 @@
-FROM node:8.11-stretch
+##FROM node:8.11-stretch
+FROM docker.io/library/node:8.9.0
 
 ENV NODE_ENV production
 ENV PORT 3000
