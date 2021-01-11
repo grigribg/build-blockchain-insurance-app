@@ -88,5 +88,35 @@ export default {
       "imgSrc": "/img/products/ski4.png",
       "description": `Radius in m: 25 <br> Length in cm: 184`
     }
+  ],
+  "airplane": [
+    {
+      "brand": "Lufthansa",
+      "model": "Paris CDG -> Berlin Brandenburg",
+      "price": 359.00,
+      "imgSrc": "/img/products/ticket1.png",
+      "description": `11/01/2021 <br> one way, 1person <br> business class`
+    },
+    {
+      "brand": "Air France",
+      "model": "Marseille, France -> Vancouver, Canda",
+      "price": 1350.00,
+      "imgSrc": "/img/products/ticket2.png",
+      "description": `15/01/2021 - 23/01/2021 <br> 8days, 1person <br> economy class`
+    },
+    {
+      "brand": "Ryanair",
+      "model": "Paris Beauvais -> Dublin",
+      "price": 9.99,
+      "imgSrc": "/img/products/ticket3.png",
+      "description": `15/01/2021<br> one way, 2person`
+    },
+    {
+      "brand": "Korean Air",
+      "model": "Paris CDG -> Seoul Incheon",
+      "price": 872.00,
+      "imgSrc": "/img/products/ticket4.png",
+      "description": `27/01/2021 - 03/02/2021 <br> 7days, 1person <br> economy class`
+    }
   ]
 };

@@ -125,7 +125,8 @@ router.get('*', (req, res) => {
     shopActive: true,
     bikesActive: req.originalUrl.includes('bikes'),
     smartPhonesActive: req.originalUrl.includes('smart-phones'),
-    skisActive: req.originalUrl.includes('skis')
+    skisActive: req.originalUrl.includes('skis'),
+    airplaneActive: req.originalUrl.includes('airplane')
   });
 });
 

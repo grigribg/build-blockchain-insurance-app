@@ -21,13 +21,13 @@ html(lang='en')
           ul(role='toolbar', aria-labelledby='ibm-masthead')
         #ibm-universal-nav
           #ibm-home
-            a(href='/') IBM&reg;
+            a(href='/') EPI
           ul#ibm-menu-links(role='toolbar', aria-label='Site map')
     #ibm-content-wrapper
       header
         .ibm-sitenav-menu-container
           .ibm-sitenav-menu-name
-            a(href='/') #{__('Blockchain for Insurance')}
+            a(href='/') #{__('Blockchain for Insurance by Grimaldi and Martin')}
           .ibm-sitenav-menu-list
             ul(role='menubar')
               li(role='presentation', class=(homeActive ? 'ibm-highlight' : ''))
@@ -41,6 +41,8 @@ html(lang='en')
                     a(role='menuitem', href='/shop/smart-phones') #{ __('Smart Phones') }
                   li(role='presentation', class=(skisActive ? 'ibm-highlight' : ''))
                     a(role='menuitem', href='/shop/skis') #{ __('Skis') }
+                  li(role='presentation', class=(airplaneActive ? 'ibm-highlight' : ''))
+                    a(role='menuitem', href='/shop/airplane') #{ __('Airplane') }
               li(role='presentation', class=(policeActive ? 'ibm-highlight' : ''))
                 a(role='menuitem', href='/police') #{ __('Police') }
               li(role='presentation', class=(repairShopActive ? 'ibm-highlight' : ''))
@@ -61,14 +63,12 @@ html(lang='en')
               #ibm-content-main
                 block content
       footer
-        .ibm-columns.ibm-padding-content
-          #ibm-footer-locale-selector.ibm-col-4-1.ibm-col-medium-4-2.ibm-fright(style='padding-top: 20px;')
-            h3.ibm-bold Select a country/region:
-            select#region-selector(style='width: 100%;')
-              option(value='', selected) &nbsp;
-              option(value='en') English
-              option(value='de') Deutsch
-        #ibm-footer
+        .ibm-columns
+          #ibm-footer-locale-selector.ibm-col-medium-4-2.ibm-fright(style='padding-top: 20px;')
+            h3.ibm-bold Epitech Project: Blockchain on Hyperledger and Besu
+            h3 Realised by Nicolas Grimaldi and Adrien Martin
+            h2 forked from <a href='https://github.com/IBM/build-blockchain-insurance-app' style="font-weight: 600">IBM/build-blockchain-insurance-app<a>
+
 
     #block-explorer
     script(src='/js/block-explorer.bundle.js')

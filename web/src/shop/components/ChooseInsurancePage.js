@@ -140,6 +140,9 @@ class ChooseInsurancePage extends React.Component {
       case 'skis':
         messageAtTop = <FormattedMessage id='Buy Insurance the Pair of Skis' />;
         break;
+      case 'airplane':
+        messageAtTop = <FormattedMessage id='Buy Insurance for Airplane Ticket' />;
+        break;
     }
 
     let { contractType, contractInfo, dailyPrice, redirectToNext } = this.state;

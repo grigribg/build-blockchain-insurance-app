@@ -27,6 +27,7 @@ class NewContractTemplatePage extends React.Component {
       bikeShop: true,
       phoneShop: false,
       skiShop: false,
+      ticketShop: false,
       formulaPerDay: 'price * 0.001',
       maxSumInsured: 2000,
       theftInsured: true,
@@ -59,6 +60,7 @@ class NewContractTemplatePage extends React.Component {
         case this.refs.bikeShopField:
         case this.refs.phoneShopField:
         case this.refs.skiShopField:
+        case this.refs.ticketShopField:
           validated = checked;
           break;
         default:
@@ -71,13 +73,13 @@ class NewContractTemplatePage extends React.Component {
 
   createContractType() {
     const {
-      description, bikeShop, phoneShop, skiShop, formulaPerDay,
+      description, bikeShop, phoneShop, skiShop, ticketShop, formulaPerDay,
       maxSumInsured, theftInsured, conditions, minDurationDays, maxDurationDays
     } = this.state;
     this.props.contractTemplateActions.createContractType({
       description,
       shopType:
-      `${bikeShop ? 'B' : ''}${phoneShop ? 'P' : ''}${skiShop ? 'S' : ''}`,
+      `${bikeShop ? 'B' : ''}${phoneShop ? 'P' : ''}${skiShop ? 'S' : ''}${ticketShop ? 'A' : ''}`,
       formulaPerDay,
       maxSumInsured,
       theftInsured,
@@ -91,7 +93,7 @@ class NewContractTemplatePage extends React.Component {
 
   render() {
     const {
-      description, bikeShop, phoneShop, skiShop, formulaPerDay,
+      description, bikeShop, phoneShop, skiShop, ticketShop, formulaPerDay,
       maxSumInsured, theftInsured, conditions, minDurationDays, maxDurationDays
     } = this.state;
 
@@ -144,6 +146,15 @@ class NewContractTemplatePage extends React.Component {
                       checked={skiShop} onChange={this.setField} />
                     <label className='ibm-field-label' htmlFor='skiShopField'>
                       <FormattedMessage id='Ski Shops' />
+                    </label>
+                  </span>
+                  <br />
+                  <span>
+                    <input type='checkbox' className='ibm-styled-checkbox'
+                      id='ticketShopField' ref='ticketShopField' name='ticketShop'
+                      checked={ticketShop} onChange={this.setField} />
+                    <label className='ibm-field-label' htmlFor='ticketShopField'>
+                      <FormattedMessage id='ticket Shops' />
                     </label>
                   </span>
                 </span>
