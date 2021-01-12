@@ -110,6 +110,30 @@ export default config;
 
 export const DEFAULT_CONTRACT_TYPES = [
   {
+    uuid: 'a24d9467-2214-4598-a42b-6e7e30e1cd9c',
+    shopType: 'A',
+    formulaPerDay: 'price * 0.005 + 50',
+    maxSumInsured: 4300.00,
+    theftInsured: true,
+    description: 'Contract for Airplane Tickets',
+    conditions: 'bla bla bla',
+    minDurationDays: 1,
+    maxDurationDays: 14,
+    active: true
+  },
+  {
+    uuid: '964df7b2-7cd1-48b3-a93f-3bfe80d41c87',
+    shopType: 'A',
+    formulaPerDay: 'price * 0.001',
+    maxSumInsured: 4000.00,
+    theftInsured: false,
+    description: 'Cheap Airplane Tickets Insurance',
+    conditions: 'cheeeaaap',
+    minDurationDays: 1,
+    maxDurationDays: 14,
+    active: true
+  },
+  {
     uuid: '63ef076a-33a1-41d2-a9bc-2777505b014f',
     shopType: 'B',
     formulaPerDay: 'price * 0.01 + 0.05',
@@ -183,7 +207,7 @@ export const DEFAULT_CONTRACT_TYPES = [
   },
   {
     uuid: 'c06f95d6-9b90-4d24-b8cb-f347d1b33ddf',
-    shopType: 'BPS',
+    shopType: 'ABPS',
     formulaPerDay: '50',
     maxSumInsured: 3000.00,
     theftInsured: false,

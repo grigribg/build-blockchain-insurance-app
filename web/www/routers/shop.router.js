@@ -29,6 +29,9 @@ router.post('/api/contract-types', async (req, res) => {
     case 'skis':
       letter = 'S';
       break;
+    case 'airplane':
+      letter = 'A';
+      break;
     default:
       letter = '';
       break;
